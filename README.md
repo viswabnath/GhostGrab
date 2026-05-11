@@ -5,10 +5,14 @@
 
 ### 📸 Interface Preview
 
-![Dashboard](frontend/public/screenshots/dashboard.png)
-![Batch Fetch](frontend/public/screenshots/batch-fetch.png)
-![Downloading Batch](frontend/public/screenshots/downloading-batch.png)
-![Ready to Download](frontend/public/screenshots/ready-to-download.png)
+<p align="center">
+  <img src="frontend/public/screenshots/dashboard.png" width="49%">
+  <img src="frontend/public/screenshots/batch-fetch.png" width="49%">
+</p>
+<p align="center">
+  <img src="frontend/public/screenshots/downloading-batch.png" width="49%">
+  <img src="frontend/public/screenshots/ready-to-download.png" width="49%">
+</p>
 
 ---
 
