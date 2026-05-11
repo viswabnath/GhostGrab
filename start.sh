@@ -31,7 +31,7 @@ fi
 # Start backend
 cd "$ROOT/backend"
 echo "Starting backend at http://localhost:8000 ..."
-uvicorn main:app --reload --port 8000 &
+.venv/bin/python -m uvicorn main:app --reload --port 8000 &
 BACKEND_PID=$!
 
 # Start frontend

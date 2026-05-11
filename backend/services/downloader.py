@@ -251,8 +251,10 @@ def download_single_entry(
 
     opts = _base_opts()
     opts.update({
-        "format": "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best",
-        "merge_output_format": "mp4",
+        "format": "bestvideo+bestaudio/best",
+        "http_chunk_size": 1048576,
+        "retries": 10,
+        "fragment_retries": 10,
         "outtmpl": str(output_dir / "%(id)s.%(ext)s"),
         "noplaylist": True,
         "ignoreerrors": False,
