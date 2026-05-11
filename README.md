@@ -3,6 +3,13 @@
 > **Pure Content. Zero Metadata.**
 > A professional media workflow tool for content agencies — downloads, strips tracking metadata, and re-encodes video for clean YouTube re-upload. Developed by [OneMark](https://onemark.co.in).
 
+### 📸 Interface Preview
+
+![Dashboard](frontend/public/screenshots/dashboard.png)
+![Batch Fetch](frontend/public/screenshots/batch-fetch.png)
+![Downloading Batch](frontend/public/screenshots/downloading-batch.png)
+![Ready to Download](frontend/public/screenshots/ready-to-download.png)
+
 ---
 
 ## What is GhostGrab?
