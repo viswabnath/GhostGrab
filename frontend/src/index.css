@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-dark: #000000;
+  --bg-card: #0a0a0a;
+  --primary: #ffffff;
+  --accent-blue: #0071e3;
+  --accent-purple: #bf5af2;
+  --text-main: #f5f5f7;
+  --text-muted: #86868b;
+  --border: rgba(255, 255, 255, 0.1);
+  --glass: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/[0.03] backdrop-blur-2xl border border-white/10 rounded-[32px] shadow-2xl;
+  }
+  
+  .input-premium {
+    @apply w-full bg-white/[0.05] border border-white/10 rounded-2xl px-6 py-4 text-white placeholder:text-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all duration-300;
+  }
+  
+  .btn-premium {
+    @apply relative overflow-hidden bg-white text-black px-8 py-4 rounded-2xl font-bold transition-all duration-500 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-ghost {
+    @apply bg-white/5 border border-white/10 px-6 py-4 rounded-2xl font-semibold text-white/80 hover:bg-white/10 hover:text-white transition-all duration-300;
+  }
+
+  .nav-blur {
+    @apply fixed top-0 w-full z-50 bg-black/50 backdrop-blur-md border-b border-white/5;
+  }
+}
+
+/* Custom Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes indeterminate {
+  0% { left: -33%; }
+  100% { left: 100%; }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-white/80 to-white/40;
+}
+
+.glow-blue {
+  box-shadow: 0 0 80px -20px rgba(0, 113, 227, 0.3);
+}
+
+.glow-purple {
+  box-shadow: 0 0 80px -20px rgba(191, 90, 242, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+}
